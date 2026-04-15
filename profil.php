@@ -93,6 +93,7 @@ include 'header.php';
                         <label class="form-label">Nouveau mot de passe :</label>
                         <input type="password" name="nouveau_mdp" class="form-control" placeholder="Laissez vide pour ne pas changer">
                         <small class="text-muted">Minimum 10 caractères si vous le modifiez.</small>
+                        <small class="text-muted">Minimim un chiffre si vous le modifiez.</small>
                     </div>
 
                     <button type="submit" class="btn btn-primary w-100">Enregistrer les modifications</button>
