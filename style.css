@@ -1,0 +1,55 @@
+/* --- VARIABLES DE COULEURS --- */
+:root {
+    --couleur-principale: #e67e22; /* Un orange vif type Leboncoin */
+    --couleur-sombre: #212529;     /* Le noir de la barre Bootstrap */
+    --fond-page: #f0f2f5;          /* Un gris très clair, doux pour les yeux */
+}
+
+/* --- STYLE GLOBAL --- */
+body {
+    background-color: var(--fond-page);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- LE HEADER --- */
+/* On ajoute une belle ligne colorée sous la barre de navigation noire */
+.navbar {
+    border-bottom: 4px solid var(--couleur-principale);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* --- LES CARTES (Annonces et Formulaires) --- */
+.card {
+    border: none;
+    border-radius: 12px;
+    /* On prépare une animation fluide pour le survol */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* L'effet "Hover" (quand la souris passe sur une carte d'annonce) */
+.card:hover {
+    transform: translateY(-5px); /* Fait monter la carte de 5 pixels */
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15) !important; /* Agrandit l'ombre */
+}
+
+/* On arrondit le haut des images pour que ça suive les bords de la carte */
+.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* --- PERSONNALISATION DES BOUTONS --- */
+.btn-primary {
+    background-color: var(--couleur-sombre);
+    border-color: var(--couleur-sombre);
+}
+
+.btn-primary:hover {
+    background-color: var(--couleur-principale);
+    border-color: var(--couleur-principale);
+}
