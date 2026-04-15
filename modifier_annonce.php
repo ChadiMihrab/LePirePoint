@@ -56,6 +56,8 @@ $annonce = $stmt->fetch(PDO::FETCH_ASSOC);
 if (!$annonce) {
     die("Vous n'avez pas le droit de modifier cette annonce.");
 }
+include 'header.php'; 
+
 ?>
 
 <!DOCTYPE html>
